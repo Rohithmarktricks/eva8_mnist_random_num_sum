@@ -22,7 +22,7 @@ Write a neural network that can:
 2. However, the Data, NN Architecture, Loss, Optimizers have been discussed below.
 
 ### Dataset - MNIST + Random Integers(0-9)
-![Alt text](/imgs/mnist.png?raw=true "Loss Function")
+![Screenshot](/imgs/mnist.png)
 
 #### Inputs
 1. MNIST Dataset (Contains the Images and the corresponding labels)
@@ -60,9 +60,9 @@ The Net2 architecture is used to solve the assignment. Contains the following la
 - However, in the problem/assignment statement, we know that the random number input is always bounded between 0-9. And hence the output is also bounded(0-18), and it's going to be an Integer(as it's allowed to use one-hot encoded representation), the entire summation part could be thought of the classification problem.
 -Hence, ```nn.CrossEntropyLoss()``` API has been used to compute the cross entropy loss of the one-hot encoded summation output.
 
-![Alt text](/imgs/epoch_loss.png?raw=true "Loss Epochs")
+![Screenshot](/imgs/epoch_loss.png)
 
-![Alt text](/imgs/loss_fn.png?raw=true "Loss Function")
+![Screenshot](/imgs/loss_fn.png)
 
 
 ### Optimizer:
