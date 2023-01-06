@@ -22,25 +22,34 @@ Write a neural network that can:
 2. However, the Data, NN Architecture, Loss, Optimizers have been discussed below.
 
 ### Dataset - MNIST + Random Integers(0-9)
-![Alt text](imgs/mnist.png?raw=true "Loss Function")
+![Alt text](/imgs/mnist.png?raw=true "Loss Function")
 
 #### Inputs
 1. MNIST Dataset (Contains the Images and the corresponding labels)
+
 2. ```torch.randint(0, 10)``` API has been used to generate random integers between 0 and 9.
 #### Outputs
 1. Labels of the corresponding MNIST images for training the Image classifier network.
+
 2. Summation of the true MNIST label and the random integer for the summation part of the network.
 
 ### NN Architecture:
 The Net2 architecture is used to solve the assignment. Contains the following layers:
+
     - 7 convolutional layers
+
     - 2 MaxPooling layers
+
     - 3 Linear/Fully connected layers
+
     ```Inputs:```
         __Image__ : 1x28x28 (MNIST Image)
+
         __RandomNumber__: 0-9
+    
     ```Outputs:```
         __label__: Label of the MNIST Image
+
         __sum_output__: Sum of the predicted label of the MNIST Image and the random number.
 
 ### Loss Functions:
@@ -50,8 +59,10 @@ The Net2 architecture is used to solve the assignment. Contains the following la
 - Ideally, this should ideally be a MSE (Mean square Error) as the summation could be thought of a "regression" problem.
 - However, in the problem/assignment statement, we know that the random number input is always bounded between 0-9. And hence the output is also bounded(0-18), and it's going to be an Integer(as it's allowed to use one-hot encoded representation), the entire summation part could be thought of the classification problem.
 -Hence, ```nn.CrossEntropyLoss()``` API has been used to compute the cross entropy loss of the one-hot encoded summation output.
-![Alt text](imgs/epoch_loss.png?raw=true "Loss Epochs")
-![Alt text](imgs/loss_fn.png?raw=true "Loss Function")
+
+![Alt text](/imgs/epoch_loss.png?raw=true "Loss Epochs")
+
+![Alt text](/imgs/loss_fn.png?raw=true "Loss Function")
 
 
 ### Optimizer:
