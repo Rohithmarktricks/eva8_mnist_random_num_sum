@@ -8,7 +8,7 @@ Write a neural network that can:
 - Gives two outputs:
 -the "number" that was represented by the MNIST image (predict 5), and
 -the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
-![alt text](https://canvas.instructure.com/courses/5720700/files/199152054/preview) 
+![alt text](/imgs/question.png) 
 - you can mix fully connected layers and convolution layers
 - you can use one-hot encoding to represent the random number input and the "summed" output.
 - Random number (7) can be represented as 0 0 0 0 0 0 0 1 0 0
