@@ -60,9 +60,9 @@ The Net2 architecture is used to solve the assignment. Contains the following la
 - However, in the problem/assignment statement, we know that the random number input is always bounded between 0-9. And hence the output is also bounded(0-18), and it's going to be an Integer(as it's allowed to use one-hot encoded representation), the entire summation part could be thought of the classification problem.
 -Hence, ```nn.CrossEntropyLoss()``` API has been used to compute the cross entropy loss of the one-hot encoded summation output.
 
-![Screenshot](/imgs/epoch_loss.png)
+![alt text here](/imgs/epoch_loss.png)
 
-![Screenshot](/imgs/loss_fn.png)
+![alt text here](/imgs/loss_fn.png)
 
 
 ### Optimizer:
