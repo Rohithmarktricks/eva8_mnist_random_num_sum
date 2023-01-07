@@ -8,6 +8,8 @@ Write a neural network that can:
 - Gives two outputs:
 -the "number" that was represented by the MNIST image (predict 5), and
 -the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
+
+__please refer to the ```question.png``` image from the ```/img``` folder__
 ![alt text](/imgs/question.png) 
 - you can mix fully connected layers and convolution layers
 - you can use one-hot encoding to represent the random number input and the "summed" output.
@@ -22,6 +24,8 @@ Write a neural network that can:
 2. However, the Data, NN Architecture, Loss, Optimizers have been discussed below.
 
 ### Dataset - MNIST + Random Integers(0-9)
+
+__please refer to the ```mnist.png``` image from the ```/img``` folder__
 ![Screenshot](/imgs/mnist.png)
 
 #### Inputs
@@ -60,6 +64,7 @@ The Net2 architecture is used to solve the assignment. Contains the following la
 - However, in the problem/assignment statement, we know that the random number input is always bounded between 0-9. And hence the output is also bounded(0-18), and it's going to be an Integer(as it's allowed to use one-hot encoded representation), the entire summation part could be thought of the classification problem.
 -Hence, ```nn.CrossEntropyLoss()``` API has been used to compute the cross entropy loss of the one-hot encoded summation output.
 
+__Please refer to the ```epoch_loss.png``` and ```loss_fn.png``` images in the ```/img``` folder__
 ![alt text here](/imgs/epoch_loss.png)
 
 ![alt text here](/imgs/loss_fn.png)
