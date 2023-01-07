@@ -65,6 +65,20 @@ The Net2 architecture is used to solve the assignment. Contains the following la
 -Hence, ```nn.CrossEntropyLoss()``` API has been used to compute the cross entropy loss of the one-hot encoded summation output.
 
 __Please refer to the ```epoch_loss.png``` and ```loss_fn.png``` images in the ```/img``` folder__
+
+    ```
+    Loss at Epoch 0: 1.3994579280100272
+    Loss at Epoch 1: 0.2154729304313439
+    Loss at Epoch 2: 0.20129536288048638
+    Loss at Epoch 3: 0.027468014342368747
+    Loss at Epoch 4: 0.007723255454994563
+    Loss at Epoch 5: 0.055382025443283224
+    Loss at Epoch 6: 0.07041706720206276
+    Loss at Epoch 7: 0.004435703824696713
+    Loss at Epoch 8: 0.0015469093507352036
+    Loss at Epoch 9: 0.0031506284465735073 
+    ```
+
 ![alt text here](/imgs/epoch_loss.png)
 
 ![alt text here](/imgs/loss_fn.png)
